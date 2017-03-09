@@ -52,10 +52,7 @@ def main():
     print('Number of layers', len(layers))
     print('Total number of feature channels:', sum(feature_nums))
 
-    #####HELPER FUNCTIONS. I didn't go over these in the video for times sake. They are mostly just formatting functions. Scroll
-    # to the bottom #########################################################################################################
-    ########################################################################################################################
-    ############################################################
+
 
     # Helper functions for TF Graph visualization
     # pylint: disable=unused-variable
@@ -145,12 +142,8 @@ def main():
                 grad[y:y + sz, x:x + sz] = g
         return np.roll(np.roll(grad, -sx, 1), -sy, 0)
 
-        # BACK TO CODE IN THE VIDEO###########################################################################################
 
-    ########################################################################################################
-    ##############################################################################
 
-    # CHALLENGE - Write a function that outputs a deep dream video
     # def render_deepdreamvideo():
 
 
